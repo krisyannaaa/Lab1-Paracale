@@ -4,123 +4,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Kristy — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Caveat:wght@500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Kristy</h1>
-        <p>Student | Aspiring Developer | Technology Enthusiast</p>
+    <div class="paper">
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+        <header>
+            <div class="nav-wrap">
+                <a class="brand" href="#home">kristy<span class="brand-dot">.</span></a>
 
-    <main>
+                <nav>
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
 
-        <section id="home">
-            <h2>Hello! I'm Kristy!</h2>
+                <a href="#contact" class="nav-cta">say hi</a>
+            </div>
+        </header>
 
-            <p>
-                Welcome to my personal portfolio. I am a student who enjoys
-                learning about programming, web development, and technology.
-            </p>
+        <main>
 
-            <p>
-                This website contains information about me, my skills,
-                projects, and interests.
-            </p>
-        </section>
+            <section id="home" class="hero">
+                <div class="hero-tags">
+                    <span class="sticky sticky-mint tag-left">BSIT student</span>
+                    <span class="handwritten hero-signature">my name is</span>
+                    <span class="sticky sticky-yellow tag-right">aspiring developer</span>
+                </div>
 
-        <hr>
+                <div class="name-frame">
+                    <h1>KRISTY</h1>
+                </div>
 
-        <section id="about">
-            <h2>About Me</h2>
+                <div class="hero-tags hero-tags-bottom">
+                    <span class="sticky sticky-coral tag-left">technology enthusiast</span>
+                    <span class="status-dot"><span class="dot"></span> open to internships &amp; good problems</span>
+                    <span class="sticky sticky-blue tag-right">Cavite, PH</span>
+                </div>
 
-            <p>
-                Hi! My name is Kristy. I am currently studying Information
-                Technology and developing my skills in programming and
-                web development.
-            </p>
-
-            <p>
-                I enjoy creating applications, solving programming problems,
-                and learning new technologies. My goal is to continuously
-                improve my technical skills and become a professional
-                developer in the future.
-            </p>
-
-            <h3>Personal Information</h3>
-
-            <p><strong>Name:</strong> Kristy</p>
-            <p><strong>Course:</strong> BS Information Technology</p>
-            <p><strong>School:</strong> Cavite State University</p>
-            <p><strong>Location:</strong> Cavite, Philippines</p>
-        </section>
-
-        <hr>
-
-        <section id="skills">
-            <h2>My Skills</h2>
-
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>Git and GitHub</li>
-                <li>Database Management</li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-
-            <article>
-                <h3>Supply Chain Management System</h3>
-
-                <p>
-                    A system developed to help manage supply chain activities
-                    such as inventory monitoring, suppliers, demand
-                    forecasting, and warehouse operations.
+                <p class="hero-line">
+                    I build software that solves<br>
+                    real problems, one commit at a time. 💻
                 </p>
-            </article>
 
-            <article>
-                <h3>Personal Portfolio Website</h3>
+                <a href="#contact" class="btn-primary">
+                    <span class="btn-icon">✉</span> Contact me
+                </a>
+            </section>
 
-                <p>
-                    A personal website created using HTML, CSS, and JavaScript
-                    to showcase my information, skills, and projects.
-                </p>
-            </article>
-        </section>
+            <div class="squiggle" aria-hidden="true">
+                <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+                    <path
+                        d="M0 12 Q 30 0, 60 12 T 120 12 T 180 12 T 240 12 T 300 12 T 360 12 T 420 12 T 480 12 T 540 12 T 600 12 T 660 12 T 720 12 T 780 12 T 840 12 T 900 12 T 960 12 T 1020 12 T 1080 12 T 1140 12 T 1200 12"
+                        fill="none" stroke="#1B1B1B" stroke-width="2" />
+                </svg>
+            </div>
 
-        <hr>
+            <section id="about" class="about">
+                <span class="handwritten section-eyebrow">about me!</span>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
+                <div class="about-grid">
+                    <figure class="polaroid polaroid-left">
+                        <div class="polaroid-photo photo-code" aria-hidden="true">
+                            <span>&lt;/&gt;</span>
+                        </div>
+                        <figcaption>2026</figcaption>
+                    </figure>
 
-            <p>Email: kristy@email.com</p>
-            <p>GitHub: github.com/krisyannaaa</p>
-        </section>
+                    <div class="about-copy">
+                        <span class="whats-up">what's up</span>
 
-    </main>
+                        <p>
+                            Hi, I'm Kristy — a student who gets a little too
+                            excited about programming, web development, and
+                            technology in general. ✨ I like turning messy
+                            problems into things that actually work, and
+                            learning new tools along the way.
+                        </p>
+                        <p>
+                            I'm currently studying Information Technology and
+                            building my skills one project at a time, with
+                            the goal of becoming a professional developer.
+                        </p>
 
-    <footer>
-        <p>&copy; 2026 Kristy. All Rights Reserved.</p>
-    </footer>
-<script src="script.js"></script>
+                        <div class="info-pills">
+                            <span class="pill pill-outline"><strong>Course</strong> BS Information Technology</span>
+                            <span class="pill pill-outline"><strong>School</strong> Cavite State University</span>
+                            <span class="pill pill-outline"><strong>Location</strong> Cavite, Philippines</span>
+                        </div>
+                    </div>
+
+                    <figure class="polaroid polaroid-right">
+                        <div class="polaroid-photo photo-terminal" aria-hidden="true">
+                            <span>$_</span>
+                        </div>
+                        <figcaption>my setup</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <div class="squiggle" aria-hidden="true">
+                <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+                    <path
+                        d="M0 12 Q 30 0, 60 12 T 120 12 T 180 12 T 240 12 T 300 12 T 360 12 T 420 12 T 480 12 T 540 12 T 600 12 T 660 12 T 720 12 T 780 12 T 840 12 T 900 12 T 960 12 T 1020 12 T 1080 12 T 1140 12 T 1200 12"
+                        fill="none" stroke="#1B1B1B" stroke-width="2" />
+                </svg>
+            </div>
+
+            <section id="skills" class="skills">
+                <span class="handwritten section-eyebrow">what I work with</span>
+                <h2>My Skills</h2>
+
+                <ul class="skill-badges">
+                    <li class="badge badge-mint">HTML <span class="badge-icon">✓</span></li>
+                    <li class="badge badge-blue">CSS <span class="badge-icon">✓</span></li>
+                    <li class="badge badge-coral">JavaScript <span class="badge-icon">✓</span></li>
+                    <li class="badge badge-yellow">PHP <span class="badge-icon">✓</span></li>
+                    <li class="badge badge-mint">Laravel <span class="badge-icon">✓</span></li>
+                    <li class="badge badge-blue">Git &amp; GitHub <span class="badge-icon">✓</span></li>
+                    <li class="badge badge-coral">Database Management <span class="badge-icon">✓</span></li>
+                </ul>
+            </section>
+
+            <div class="squiggle" aria-hidden="true">
+                <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+                    <path
+                        d="M0 12 Q 30 0, 60 12 T 120 12 T 180 12 T 240 12 T 300 12 T 360 12 T 420 12 T 480 12 T 540 12 T 600 12 T 660 12 T 720 12 T 780 12 T 840 12 T 900 12 T 960 12 T 1020 12 T 1080 12 T 1140 12 T 1200 12"
+                        fill="none" stroke="#1B1B1B" stroke-width="2" />
+                </svg>
+            </div>
+
+            <section id="projects" class="projects">
+                <span class="handwritten section-eyebrow">things I've built</span>
+                <h2>My Projects</h2>
+
+                <article class="project project-dark">
+                    <div class="project-tab">Project 01</div>
+                    <div class="project-body">
+                        <h3>Supply Chain Management System</h3>
+                        <p>
+                            A system built to help manage supply chain
+                            activities — inventory monitoring, suppliers,
+                            demand forecasting, and warehouse operations —
+                            in one place.
+                        </p>
+                        <a href="#" class="project-link">View project &nbsp;→</a>
+                    </div>
+                    <div class="project-swatch" aria-hidden="true">
+                        <span>📦</span>
+                    </div>
+                </article>
+
+                <article class="project project-yellow">
+                    <div class="project-tab">Project 02</div>
+                    <div class="project-body">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>
+                            This very site — built with HTML, CSS, and
+                            JavaScript to showcase my information, skills,
+                            and projects.
+                        </p>
+                        <a href="#" class="project-link">View project &nbsp;→</a>
+                    </div>
+                    <div class="project-swatch" aria-hidden="true">
+                        <span>🎨</span>
+                    </div>
+                </article>
+            </section>
+
+            <div class="squiggle" aria-hidden="true">
+                <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+                    <path
+                        d="M0 12 Q 30 0, 60 12 T 120 12 T 180 12 T 240 12 T 300 12 T 360 12 T 420 12 T 480 12 T 540 12 T 600 12 T 660 12 T 720 12 T 780 12 T 840 12 T 900 12 T 960 12 T 1020 12 T 1080 12 T 1140 12 T 1200 12"
+                        fill="none" stroke="#1B1B1B" stroke-width="2" />
+                </svg>
+            </div>
+
+            <section id="contact" class="contact">
+                <span class="handwritten section-eyebrow">let's talk</span>
+
+                <div class="contact-card">
+                    <h2>Got a project or an opportunity? <br> I'd love to hear about it.</h2>
+
+                    <div class="contact-rows">
+                        <a class="contact-row" href="mailto:kristy@email.com">
+                            <span class="contact-icon">✉</span> kristy@email.com
+                        </a>
+                        <a class="contact-row" href="https://github.com/krisyannaaa" target="_blank" rel="noopener">
+                            <span class="contact-icon">⌥</span> github.com/krisyannaaa
+                        </a>
+                    </div>
+
+                    <button type="button" id="copyEmailBtn" class="btn-primary btn-secondary">
+                        <span class="btn-icon">⧉</span> Copy email
+                    </button>
+                    <p id="copyFeedback" class="copy-feedback" role="status" aria-live="polite"></p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year">2026</span> Kristy. All rights reserved.</p>
+            <a href="#home" class="back-to-top">back to top ↑</a>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
